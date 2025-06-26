@@ -63,4 +63,8 @@ API documentation and specifications are located in the `api/` directory:
 ## Notes
 - This server uses in-memory storage for demo purposes.
 - JWT secret is hardcoded for demo; use environment variables in production.
-- For public access or integration, you can expose your local server using ngrok. See `mcp/README.md` for details. 
+- For public access or integration, you can expose your local server using ngrok. See `mcp/README.md` for details.
+
+## Deployment with ngrok
+
+For instructions on how to expose your local API server to the internet using ngrok, see the [mcp/README.md](mcp/README.md) file. 
