@@ -60,3 +60,32 @@ To make your local MCP server accessible over the internet (for testing or integ
 ## Notes
 - This server uses in-memory storage for demo purposes.
 - JWT secret is hardcoded for demo; use environment variables in production. 
+
+## Setting up MCP on Cursor
+
+To work with this MCP server in [Cursor](https://www.cursor.so/):
+
+1. **Open the project in Cursor:**
+   - Launch Cursor and open the root directory of this repository.
+
+2. **Configure MCP servers:**
+   - Edit the `.cursor/mcp.json` file in the project root to add or update your MCP server configuration. Example:
+     ```json
+     {
+       "mcpServers": {
+         "simplebooks-local": {
+           "url": "http://localhost:8000",
+           "description": "Local Simple Books MCP server"
+         }
+       }
+     }
+     ```
+   - For remote access (e.g., via ngrok), use your public ngrok URL as the value for `url`.
+
+3. **Use the Cursor terminal:**
+   - You can run, test, and debug the MCP server directly from the integrated terminal in Cursor.
+   - All API endpoints and development workflows are available as described below.
+
+4. **Leverage Cursor features:**
+   - Use Cursor's AI, code navigation, and search tools to explore and extend the MCP server codebase efficiently.
+
